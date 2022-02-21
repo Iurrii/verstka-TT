@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.ttf");
+}
+
+@import "_logotypes.scss";
+@import "_header.scss";
+@import "_navigation.scss";
+@import "_info-panel.scss";
+@import "_footer.scss";
+
+body,
+p,
+h3 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

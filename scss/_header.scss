@@ -1,0 +1,161 @@
+.header {
+  &__navmenu {
+    width: 100%;
+    height: 60px;
+    padding: 0% 3%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  &__header-profile {
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+
+  }
+}
+
+.navmenu {
+
+  &__logo {}
+
+  &__storage {
+    margin-left: 30vw;
+  }
+
+  &__line {
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  &__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 24px;
+  }
+}
+
+
+
+.storage {
+  position: relative;
+
+  &__part {
+    position: absolute;
+    left: 4px;
+    top: 7px;
+  }
+
+  &__backpack {}
+}
+
+.line--small {
+  width: 13px;
+}
+
+.header-profile {
+  display: flex;
+  justify-content: space-between;
+  height: 155px;
+  box-sizing: border-box;
+  padding: 7% 3%;
+
+  &__profile {}
+
+  &__to-share {}
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__user-data {}
+
+  &__edit-profile {}
+
+}
+
+.user-data {
+  margin: 0;
+  display: flex;
+
+  &__user-foto-wrapper {
+    position: relative;
+    margin-right: 4vw;
+  }
+
+  &__user-foto {}
+
+  &__user-foto-frame {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+  }
+
+  &__data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  &__counter {
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    line-height: 110%;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__user {
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    line-height: 110%;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__user-surname {}
+
+  &__user-name {}
+
+}
+
+
+
+.edit-profile {
+  &__icon {}
+
+  &__btn {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    text-decoration-line: underline;
+    color: #ACAFF3;
+  }
+}
+
+.to-share {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  &__text {
+    color: #ACAFF3;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  &__icon {}
+}

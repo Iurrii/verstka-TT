@@ -1,0 +1,75 @@
+.footer {
+  background-color: #222222;
+  height: 320px;
+  padding: 5% 10%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-around;
+  font-family: Proxima Nova, sans-serif;
+
+  &__email-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 110%;
+    margin-bottom: 27px;
+  }
+
+  &__to-share {
+    margin-bottom: 45px;
+    height: 50px;
+    fill: #fff;
+  }
+  &__stores {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: auto;
+  }
+
+  &__store {
+    display: inline-block;
+  }
+
+  &__logo-wrapper {
+    margin-bottom: 20px;
+  }
+
+  &__copyright {
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 110%;
+    margin-bottom: 5px;
+  }
+
+  &__made {
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  &__made-link {
+    cursor: pointer;
+    color: white;
+  }
+}

@@ -1,0 +1,124 @@
+.info-panel {
+  background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+  font-family: "Proxima Nova";
+  padding: 3%;
+
+  &__info-statistics {}
+
+
+
+  &__achievements {}
+}
+
+.info-statistics {
+
+
+  &__season-selection {
+    margin-bottom: 2vh;
+  }
+
+  &__panel {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    width: 67.5px;
+    height: 60px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    // border: 1px solid transparent;
+    // border-image: linear-gradient(to bottom left, #2C2C2C 0%, #5A60E7 35%, #1E1E28 100%);
+    // border-image-slice: 1;
+    border: 1px solid #1E1E28;
+    border-radius: 5px;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #FAF9F9;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 110%;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__value {
+    color: #FF795B;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+  }
+}
+
+.season-selection {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #4b4faa;
+  border-radius: 3px;
+  padding: 1% 1%;
+
+  &__btn {
+    height: 90%;
+    width: 50%;
+    box-sizing: border-box;
+    background: inherit;
+    color: #ACAFF3;
+    border: none;
+    border-radius: 3px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 110%;
+  }
+}
+
+.season-selection__btn--active {
+  background: #5A60E7;
+  color: #ffffff;
+}
+
+.achievements {
+  &__title {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #909090;
+    margin-bottom: 20px;
+  }
+
+  &__panel-one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__active-achievements {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__hr-line {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__panel-two {}
+}
