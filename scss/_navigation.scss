@@ -5,11 +5,14 @@
   align-items: center;
   box-sizing: border-box;
   padding: 10px;
+
   // overflow-x: visible;
   // overflow-y: hidden;
 
   &__list {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
   }

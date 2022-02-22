@@ -1,18 +1,17 @@
 .header {
+  background-color: #fff;
+
   &__navmenu {
-    width: 100%;
+    width: 94vw;
     height: 60px;
-    padding: 0% 3%;
-    background-color: #ffffff;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
   }
 
   &__header-profile {
     background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
-
   }
 }
 
@@ -20,9 +19,14 @@
 
   &__logo {}
 
-  &__storage {
-    margin-left: 30vw;
-  }
+  &__control-panel {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  
+  &__storage {}
 
   &__line {
     display: block;
@@ -33,7 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: auto;
     width: 24px;
   }
 }

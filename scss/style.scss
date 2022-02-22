@@ -7,16 +7,13 @@
 @import "_header.scss";
 @import "_navigation.scss";
 @import "_info-panel.scss";
+@import "_main.scss";
 @import "_footer.scss";
 
-body,
-p,
-h3 {
-  margin: 0;
-}
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -27,4 +24,6 @@ h3 {
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  height: 100%;
+  background-color: #faf9f9;
 }
