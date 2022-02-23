@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <title>CROSSBALL</title>
 </head>
-
 <body>
-
   <header class="header">
 
     <div class="header__navmenu">
@@ -18,10 +15,10 @@
         <div class="logo__cross cross">
           <div class="cross__item">
             <img src="./images/icon-cross.svg">
-            <img src="./images/icon-cross.svg" style="transform: rotate(90deg);">
+            <img class="rotate90" src="./images/icon-cross.svg">
           </div>
           <div class="cross__item">
-            <img src="./images/icon-cross.svg" style="transform: rotate(90deg);">
+            <img class="rotate90" src="./images/icon-cross.svg">
             <img src="./images/icon-cross.svg">
 
           </div>
@@ -31,7 +28,7 @@
       </div>
 
       <div class="navmenu__control-panel">
-        
+
         <div class="navmenu__storage storage">
           <img class="storage__part" src="./images/backpack-part.svg" alt="">
           <img class="storage__backpack" src="./images/backpack.svg" alt="">
@@ -92,7 +89,6 @@
     </div>
 
   </header>
-
 
 
   <nav class="navigation">
@@ -167,7 +163,6 @@
   </section>
 
 
-
   <main class="main">
 
     <div class="main__content">
@@ -180,11 +175,97 @@
 
         <thead class="table-of-results__head">
           <tr class="table-of-results__row">
+
             <td class="table-of-results__col">Сезон</td>
-            <td class="table-of-results__col">И</td>
-            <td class="table-of-results__col">Г</td>
-            <td class="table-of-results__col">П</td>
-            <td class="table-of-results__col">Р</td>
+
+            <td class="table-of-results__col">
+              <div class="table-of-results__head-sell">
+                <div class="table-of-results__container-btns">
+                  <svg class="table-of-results__arrow" width="6" height="5" viewBox="0 0 6 5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                  <svg class="table-of-results__arrow rotate180 table-of-results__arrow--active" width="6" height="5"
+                    viewBox="0 0 6 5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                </div>
+                <p class="table-of-results__text">И</p>
+              </div>
+            </td>
+            <td class="table-of-results__col">
+              <div class="table-of-results__head-sell">
+                <div class="table-of-results__container-btns">
+                  <svg class="table-of-results__arrow" width="6" height="5" viewBox="0 0 6 5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                  <svg class="table-of-results__arrow rotate180 table-of-results__arrow--active" width="6" height="5"
+                    viewBox="0 0 6 5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                </div>
+                <p class="table-of-results__text">Г</p>
+              </div>
+            </td>
+
+            <td class="table-of-results__col">
+              <div class="table-of-results__head-sell">
+                <div class="table-of-results__container-btns">
+                  <svg class="table-of-results__arrow" width="6" height="5" viewBox="0 0 6 5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                  <svg class="table-of-results__arrow rotate180 table-of-results__arrow--active" width="6" height="5"
+                    viewBox="0 0 6 5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                </div>
+                <p class="table-of-results__text">П</p>
+              </div>
+            </td>
+
+            <td class="table-of-results__col">
+              <div class="table-of-results__head-sell">
+                <div class="table-of-results__container-btns">
+                  <svg class="table-of-results__arrow" width="6" height="5" viewBox="0 0 6 5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                  <svg class="table-of-results__arrow rotate180 table-of-results__arrow--active" width="6" height="5"
+                    viewBox="0 0 6 5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                </div>
+                <p class="table-of-results__text">П+Г</p>
+              </div>
+            </td>
+            
+            <td class="table-of-results__col">
+              <div class="table-of-results__head-sell">
+                <div class="table-of-results__container-btns">
+                  <svg class="table-of-results__arrow" width="6" height="5" viewBox="0 0 6 5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                  <svg class="table-of-results__arrow rotate180 table-of-results__arrow--active" width="6" height="5"
+                    viewBox="0 0 6 5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.65371 1.1C2.80767 0.833334 3.19257 0.833333 3.34653 1.1L5.25179 4.4C5.40575 4.66667 5.2133 5 4.90538 5H1.09487C0.786946 5 0.594496 4.66667 0.748456 4.4L2.65371 1.1Z" />
+                  </svg>
+                </div>
+                <p class="table-of-results__text">Р</p>
+              </div>
+            </td>
           </tr>
         </thead>
 
@@ -193,6 +274,7 @@
       </table>
     </div>
   </main>
+
 
   <footer class="footer">
 
@@ -241,15 +323,13 @@
             <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 2.74576L2.74575 0L10 7.25424L7.25423 10L0 2.74576Z" />
             </svg>
-            <svg width="10" height="10" viewBox="0 0 10 10" style="transform: rotate(90deg);"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="rotate90" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 2.74576L2.74575 0L10 7.25424L7.25423 10L0 2.74576Z" />
             </svg>
           </div>
 
           <div class="cross__item white">
-            <svg width="10" height="10" viewBox="0 0 10 10" style="transform: rotate(90deg);"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="rotate90" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 2.74576L2.74575 0L10 7.25424L7.25423 10L0 2.74576Z" />
             </svg>
             <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -290,9 +370,6 @@
     <p class="footer__copyright">© Все права защищены</p>
     <p class="footer__made">Сделали в <a class="footer__made-link" href="#">Spans</a></p>
   </footer>
-
-
   <script src="script.js"></script>
 </body>
-
 </html>

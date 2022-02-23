@@ -1,4 +1,4 @@
-const seasons = [
+const statistics = [
   {
     name: "Сезон 2021/2020",
     valueOfGames: 5,
@@ -36,49 +36,64 @@ const seasons = [
   },
 ];
 
-let parentForGenerationTable = document.getElementById("table-of-results-output");
+let parentForGenerationTable = document.getElementById(
+  "table-of-results-output"
+);
 
-// createTable(parentForGenerationTable, 5, 4)
+console.log(parentForGenerationTable.rows);
 
-// function createTable(parent, rows, cols) {
-//   var tbody = document.createElement('tbody');
-//   for (let i = 0; i < rows; i++) {
-//     var tr = document.createElement('tr');
-//     for (let j = 0; j < cols; j++) {
-//       var td = document.createElement('td')
-//       tr.appendChild(td);
-//     }
-//     tbody.appendChild(tr);
-//   }
-//   parent.appendChild(tbody);
-// }
+createTable(parentForGenerationTable, statistics);
 
-addContentForTable(seasons);
-
-function addContentForTable(arr) {
-  for (let item of arr) {
+function createTable(tbody, array) {
+  //сделать более универсальную функцию
+  array.forEach(function (item) {
     let tr = document.createElement("tr");
+    let tdname = document.createElement("td");
+    let tdvalueOfGames = document.createElement("td");
+    let tdgoal = document.createElement("td");
+    let tdpass = document.createElement("td");
+    let tdgoalEndPass = document.createElement("td");
+    let tdrating = document.createElement("td");
 
-    let td1 = document.createElement("td");
-    td1.innerHTML = item.name;
-    tr.appendChild(td1);
+    tdname.innerText = item.name;
+    tdvalueOfGames.innerText = item.valueOfGames;
+    tdgoal.innerText = item.goal;
+    tdpass.innerText = item.pass;
+    tdgoalEndPass.innerHTML = item.goal + item.pass;
+    tdrating.innerText = item.rating;
 
-    let td2 = document.createElement("td");
-    td2.innerHTML = item.valueOfGames;
-    tr.appendChild(td2);
-
-    let td3 = document.createElement("td");
-    td3.innerHTML = item.goal;
-    tr.appendChild(td3);
-
-    let td4 = document.createElement("td");
-    td4.innerHTML = item.pass;
-    tr.appendChild(td4);
-
-    let td5 = document.createElement("td");
-    td5.innerHTML = item.rating;
-    tr.appendChild(td5);
-
-    parentForGenerationTable.appendChild(tr);
-  }
+    tr.appendChild(tdname);
+    tr.appendChild(tdvalueOfGames);
+    tr.appendChild(tdgoal);
+    tr.appendChild(tdpass);
+    tr.appendChild(tdgoalEndPass);
+    tr.appendChild(tdrating);
+    tbody.appendChild(tr);
+  });
 }
+
+sortTableToLess(parentForGenerationTable);
+
+function sortTableToMore(parent) {
+  //2 сортировка по голам, к большему
+  let arr = Array.from(parent.rows);
+  arr.sort((a, b) => {
+    let str = a.cells[2].textContent;
+    let str2 = b.cells[2].textContent;
+    return str.localeCompare(str2);
+  });
+  parent.append(...arr);
+}
+
+function sortTableToLess(parent) {
+  //2 сортировка по голам, к меньшему
+  let arr = Array.from(parent.rows);
+  arr.sort((a, b) => {
+    let str = a.cells[2].textContent;
+    let str2 = b.cells[2].textContent;
+    return str2.localeCompare(str);
+  });
+  parent.append(...arr);
+}
+
+
