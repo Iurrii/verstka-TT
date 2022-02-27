@@ -3,14 +3,30 @@
   font-family: "Proxima Nova";
   padding: 3%;
 
-  &__info-statistics {}
+  @media (min-width:576px) {
+    padding: 5%;
+  }
 
-
-
-  &__achievements {}
+  @media (min-width:768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 200px;
+    padding: 3%;
+    gap: 5%;
+  }
 }
 
 .info-statistics {
+  width: 100%;
+
+  @media (min-width:576px) {
+    width: 60%;
+    margin: auto;
+  }
+
+  @media (min-width:768px) {
+    width: 50%;
+  }
 
 
   &__season-selection {
@@ -94,6 +110,15 @@
 }
 
 .achievements {
+  @media (min-width:576px) {
+    width: 60%;
+    margin: auto;
+  }
+
+  @media (min-width:768px) {
+    width: 50%;
+  }
+
   &__title {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;

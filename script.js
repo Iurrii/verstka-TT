@@ -45,6 +45,7 @@ let listnersForTableBtns = [games, goals, pass, goalsEndPass, rating];
 let parentForGenerationTable = document.getElementById(
   "table-of-results-output"
 );
+let activeElement = null;
 
 window.onload = () => {
   createTable(parentForGenerationTable, statistics);
@@ -109,7 +110,15 @@ function addListenersForTableBtns(arr) {
       let idParent = e.target.parentElement.id;
       let trend = e.target.dataset.trend;
 
+      toggleActiveClass(e.target);
       sortTable(parentForGenerationTable, idParent, trend);
     });
   });
+}
+
+function toggleActiveClass(target) {
+  //функция не работает при попадании по div'у (увеличить кнопки??)
+  activeElement && activeElement.classList.remove("table-of-results__arrow--active");
+  target.classList.toggle("table-of-results__arrow--active");
+  activeElement = target;
 }

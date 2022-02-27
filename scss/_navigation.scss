@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
   background-color: #faf9f9;
-  height: 80px;
+  min-height: 80px;
   align-items: center;
   box-sizing: border-box;
   padding: 10px;
@@ -12,16 +12,29 @@
   &__list {
     width: 100%;
     display: flex;
+    flex-wrap: no-wrap;
     justify-content: space-between;
     padding: 0;
     margin: 0;
+
+    @media (min-width:576px) {
+      gap: 5px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width:992px) {
+      justify-content: space-around;
+      flex-wrap: no-wrap;
+    }
+
   }
 
   &__item {
     color: #222222;
+    display: block;
     width: 180px;
     padding: 9px;
-    // display: block;
     flex-grow: 0;
     flex-shrink: 0;
     font-family: Proxima Nova, sans-serif;
@@ -34,6 +47,16 @@
     cursor: pointer;
     background-color: #fff;
     border-radius: 5px;
+    text-align: center;
+
+    @media (min-width:576px) {
+      min-width: 45%;
+    }
+
+    @media (min-width:992px) {
+      min-width: 180px;
+      width: 24%;
+    }
   }
 
   &__item:hover>ul {
@@ -50,9 +73,6 @@
   &__link {
     text-decoration: none;
     color: inherit;
-
-
-
   }
 }
 
