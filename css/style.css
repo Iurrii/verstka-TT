@@ -163,6 +163,29 @@
   font-style: normal;
 }
 
+.edit-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+}
+
+.edit-profile__icons {
+  font-size: 0px;
+  position: relative;
+  height: 12px;
+  width: 12px;
+}
+
+.edit-profile__icon {
+  position: absolute;
+}
+
+.edit-profile__icon--bott-right {
+  right: 0%;
+  top: 80%;
+}
+
 .edit-profile__btn {
   font-family: "Proxima Nova";
   font-style: normal;
@@ -491,9 +514,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .table-of-results__container-btns {
@@ -511,7 +534,7 @@
 }
 
 .table-of-results__container-btns:first-child {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 .table-of-results__arrow {

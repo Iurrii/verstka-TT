@@ -24,8 +24,8 @@
     width: 25%;
     justify-content: space-between;
     align-items: center;
-  } 
-  
+  }
+
   &__storage {}
 
   &__line {
@@ -134,7 +134,25 @@
 
 
 .edit-profile {
-  &__icon {}
+  display: flex;
+  gap: 2%;
+
+  &__icons {
+    font-size: 0px;
+    position: relative;
+    height: 12px;
+    width: 12px;
+  }
+
+  &__icon {
+    position: absolute;
+
+    &--bott-right {
+      right: 0%;
+      top: 80%;
+      // bottom: 5px;  
+    }
+  }
 
   &__btn {
     font-family: "Proxima Nova";
