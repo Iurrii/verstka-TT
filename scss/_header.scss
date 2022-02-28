@@ -9,10 +9,6 @@
     align-items: center;
     justify-content: space-between;
   }
-
-  // &__header-profile {
-  //   background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
-  // }
 }
 
 .navmenu {
@@ -53,8 +49,6 @@
   }
 }
 
-
-
 .storage {
   position: relative;
 
@@ -82,14 +76,11 @@
 
   @media (min-width:576px) {
     padding: 3% 6%;
-
   }
 
   @media (min-width:992px) {
     flex-direction: column-reverse;
     align-items: flex-end;
-
-
   }
 
   &__profile {
@@ -102,7 +93,6 @@
     @media (min-width:992px) {
       flex-direction: row;
       align-items: flex-end;
-
     }
   }
 
